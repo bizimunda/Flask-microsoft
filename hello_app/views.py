@@ -9,7 +9,7 @@ def home():
 
 
 @app.route("/hamid/")
-def home():
+def hamid():
     return "hamid"
 
 
