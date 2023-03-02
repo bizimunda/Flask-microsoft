@@ -8,6 +8,13 @@ from datetime import datetime, timezone
 from dotenv import load_dotenv
 from flask import Flask, request
 
+load_dotenv()
+
+app = Flask(__name__)
+
+url = os.getenv("DATABASE_URL")
+connection = psycopg2.connect(url)
+
 
 @app.route("/")
 def home():
