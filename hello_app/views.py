@@ -8,7 +8,7 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/hamid")
+@app.route("/hamid/")
 def home():
     return "hamid"
 
